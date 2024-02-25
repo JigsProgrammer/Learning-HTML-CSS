@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: #14213D;
+    font-family: Tahoma;
+    font-size: 20;
+    color:#ffffff;
+  }
+  
+  h1, p {
+    margin: 0.3em auto;
+    text-align: center;
+    color: #FCA311;
+  }
+  
+  form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    /*This margin: 0 auto; puts no margin and auto-centers it (?), so putting a value to it will make the form uncentered*/
+    padding-bottom: 2em;
+    background-image: repeating-radial-gradient(#000000, #14213D, #3d3014);
+  }
+  
+  fieldset {
+    border: 1;
+    padding: 20rem auto;
+    margin-bottom: 0.8rem;
+  }
+
+input[type="text"], 
+input[type="number"],
+input[type="email"] {
+    margin: 0.5em 0;
+}
+  
+  label{
+    display: block;
+    margin: 0.1em 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-height:3em;
+  }
+  
+  input,
+  textarea{
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+  
+  .inline {
+      width: unset;
+      /*This width: unset; makes the select options and their boxes in one line*/
+      margin: 0 0.5em 0 0;
+      vertical-align: middle;
+      /*This makes the text at the center of the checkboxes/radio*/
+      display: inline;
+      /*This also helps with inlining them*/
+    }
+  
+  input[type="submit"] {
+    display:block;
+    width: 50%;
+    height: 0.2em;
+    min-width: 300px;
+    margin: 1em auto;
+    background-color: black;
+    border: 5px solid #122e6a;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.727);
+  }

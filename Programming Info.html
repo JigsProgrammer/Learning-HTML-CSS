@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Programmer Information</title>
+    <link rel="stylesheet" href="Programming Info.css">
+  </head>
+  <body>
+    <h1 id="title">Programmer Information</h1>
+    <p id="description">Let other programmers get to know you more!</p>
+
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name<input id="name" type="text"  placeholder="Enter your name" required/></label>
+        <label for="email" id="email-label">Email<input id="email" type="email"  placeholder="Enter your email"required/></label>
+        <label for="number" id="number-label">Age (optional)<input id="number" type="number" name="age" min="10" max="120" placeholder="Age"/></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">What do you aspire to be?
+          <select id="dropdown" name="dropdown">
+            <option value="0">Select aspiration</option>
+            <option value="1">Software Engineer</option>
+            <option value="2">Web Developer</option>
+            <option value="3">Mobile App Developer</option>
+            <option value="4">Cybersecurity</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What level are you currently in?</legend>
+          <label for="beginner"><input id="beginner" type="radio" name="level" class="inline" value="Blevel" checked>Beginner</label>
+          <label for="average"><input id="average" type="radio" name="level" class="inline" value="Alevel">Average</label>
+          <label for="intermediate"><input id="intermediate" type="radio" name="level" class="inline" value="Ilevel">Intermediate</label>
+          <label for="master"><input id="master" type="radio" name="level" class="inline" value="Mlevel">Master</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">What would you prefer among these programming languages?
+           <select id="dropdown" name="dropdown">
+            <option value="0">Select a programming language</option>
+            <option value="1">C</option>
+            <option value="2">C#</option>
+            <option value="3">C++</option>
+            <option value="4">Python</option>
+            <option value="5">JavaScript</option>
+            <option value="6">Java</option>
+            <option value="7">Php</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What programming languages are you skilled at?</legend>
+        <label for="GoJava"><input id="GoJava" type="checkbox" value="GoJava" class="inline">GoJava</label>
+       <label for="JavaScript"><input id="JavaScript" type="checkbox" value="JavaScript" class="inline">Javascript</label>
+        <label for="Python"><input id="Python" type="checkbox" value="Python" class="inline">Python</label>
+        <label for="Kotlin"><input id="Kotlin" type="checkbox" value="Kotlin" class="inline">Kotlin</label>
+        <label for="PHP"><input id="PHP" type="checkbox" value="PHP" class="inline">PHP</label>
+        <label for="C#"><input id="C#" type="checkbox" value="C#" class="inline">C#</label>
+        <label for="Swift"><input id="Swift" type="checkbox" value="Swift" class="inline">Swift</label>
+        <label for="R"><input id="R" type="checkbox" value="R" class="inline">R</label>
+        <label for="Ruby"><input id="Ruby" type="checkbox" value="Ruby" class="inline">Ruby</label>
+        <label for="C and C++"><input id="C and C++" type="checkbox" value="C and C++" class="inline">C and C++</label>
+        <label for="HTML"><input id="HTML" type="checkbox" value="HTML" class="inline">HTML</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="AddCom">Any additional insights about you?
+          <textarea id="AddCom" rows="" cols="" placeholder="Enter your insights here..."></textarea>
+        </label>
+      </fieldset>
+
+ <input id="submit" type="submit" value="Submit" />
+
+    </form>
+
+  </body>
+</html>
