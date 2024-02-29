@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding-inline-start: 0;
-    /* first encounter of this property */
+    /* basically indents the content in relation to the padding, inline */
     margin-block: 0;
     /* same goes with this one^^ */
     height: 100%;
