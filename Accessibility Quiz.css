@@ -22,13 +22,15 @@
     align-items: center;
     position: fixed;
     top: 0;
-    /* Position and Top properties here  */
+    /* Position and Top properties here fixes the header on top despite scrolling up or down; top with a value of 0 - i'm quite unsure with this */
   }
   
   #logo {
     width: max(100px, 18vw);
+    /* The general purpose of max() is to make the selector responsive; so far, this returns the largest positive value */
     background-color: #0a0a23;
     aspect-ratio: 35 / 4;
+    /* simple aspect ratio knowledge */
     padding: 0.4rem;
   }
   
@@ -50,7 +52,9 @@
     flex-wrap: wrap;
     align-items: center;
     padding-inline-start: 0;
+    /* first encounter of this property */
     margin-block: 0;
+    /* same goes with this one^^ */
     height: 100%;
   }
   
@@ -62,6 +66,7 @@
   }
   
   nav > ul > li:hover {
+    /* sets rule set for when hovering lists under ul which is under nav */
     background-color: #dfdfe2;
     color: #1b1b32;
     cursor: pointer;
@@ -69,6 +74,7 @@
   
   li > a {
     color: inherit;
+    /* inherits the color from the parent element */
     text-decoration: none;
   }
   
@@ -137,6 +143,7 @@
   
   p::before {
     content: "Question #";
+    /* ::before simply puts the rule set before the specified selector. in this case, it's p */
   }
   
   .question {
@@ -146,6 +153,7 @@
   
   .answers-list {
     list-style: none;
+    /* applies to list items (li); styles all li at once; this basically adds bullet points */
     padding: 0;
   }
   
@@ -177,13 +185,18 @@
   
   .sr-only {
     position: absolute;
+    /* basically tells how an element is positioned. this specific case makes the element somewhat on top of the contents */
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
+    /* goes below the default value of margin */
     overflow: hidden;
+    /* this specific rule specifies that, with respect to vertical and horizontal directions, the content will be hidden if it does not fit in the parameters */
     clip: rect(0, 0, 0, 0);
+    /* clip-path is the new name for this property; only applies to absolute or fixed positions; defines a visible portion of an element */
     white-space: nowrap;
+    /* edits the whitespace of the element; in this case, it does not wrap to the next line */
     border: 0;
   }
   
