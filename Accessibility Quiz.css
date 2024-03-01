@@ -54,7 +54,7 @@
     padding-inline-start: 0;
     /* basically indents the content in relation to the padding, inline */
     margin-block: 0;
-    /* same goes with this one^^ */
+    /* margin property that specifies on its top and bottom; margin-inline for left and right*/
     height: 100%;
   }
   
