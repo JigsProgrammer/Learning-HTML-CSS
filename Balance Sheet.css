@@ -10,6 +10,7 @@ span[class~="sr-only"] {
     padding: 0 !important;
     margin: -1px !important;
   }
+  /* !important helps in not overwriting this rule set */
   
   html {
     box-sizing: border-box;
@@ -33,10 +34,12 @@ span[class~="sr-only"] {
   }
   
   h1 .flex span:first-of-type {
+    /* :first-of-type pseudoselector selects the first of the siblings */
     font-size: 0.7em;
-  }
-  
-  h1 .flex span:last-of-type {
+}
+
+h1 .flex span:last-of-type {
+      /* :last-of-type pseudoselector selects the last of the siblings */
     font-size: 1.2em;
   }
   
@@ -51,14 +54,17 @@ span[class~="sr-only"] {
     justify-content: flex-end;
     position: sticky;
     z-index: 999;
+    /* in relation to position, has to do with stacking. this case, allows this stack to not be overlapped upon*/
     top: 0;
     background: #0a0a23;
     color: #fff;
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    /* calc() function calculates different values */
     margin: 0 -2px;
   }
   
   #years span[class] {
+    /* selects span under #years with a class attribute */
     font-weight: bold;
     width: 4.5rem;
     text-align: right;
@@ -70,6 +76,7 @@ span[class~="sr-only"] {
   
   table {
     border-collapse: collapse;
+    /* borders of each cells collapses so that each cell does not have their own borders */
     border: 0;
     width: 100%;
     position: relative;
@@ -90,12 +97,14 @@ span[class~="sr-only"] {
     min-width: 4rem;
     max-width: 4rem;
   }
+  /* this rule set allows for the elements to not shrink their container */
   
   tbody th {
     width: calc(100% - 12rem);
   }
   
   tr[class="total"] {
+    /* this selector targets classes total only */
     border-bottom: 4px double #0a0a23;
     font-weight: bold;
   }
@@ -111,6 +120,7 @@ span[class~="sr-only"] {
   }
   
   tr.total td:nth-of-type(3) {
+    /* selects nth of the specified element */
     padding-right: 0.5rem;
   }
   
