@@ -25,6 +25,7 @@
     top: -26px;
     left: -31px;
     z-index: 1;
+    /* prioritizes this div */
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
     transform: rotate(-45deg);
@@ -130,6 +131,7 @@
   }
   
   .cat-mouth div {
+    /* this selector selects all divs with cat-mouth */
     width: 30px;
     height: 50px;
     border: 2px solid #000;
@@ -139,8 +141,8 @@
   
   .cat-mouth-line-left {
     position: absolute;
-    top: 88px;
-    left: 74px;
+    inset: 88px 0 0 74px;
+    /* shortcut for top, left, bottom, right */
     transform: rotate(170deg);
   }
   
