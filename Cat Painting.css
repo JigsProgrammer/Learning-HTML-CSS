@@ -23,7 +23,7 @@
   .cat-left-ear {
     position: absolute;
     top: -26px;
-    left: -31px;
+    left: -20px;
     z-index: 1;
     /* prioritizes this div */
     border-top-left-radius: 90px;
@@ -33,11 +33,15 @@
     border-right: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
   }
+
+.cat-left-ear:hover {
+    transform: rotate(-50deg);
+  }
   
   .cat-right-ear {
     position: absolute;
     top: -26px;
-    left: 163px;
+    left: 153px;
     z-index: 1;
     transform: rotate(45deg);
     border-top-left-radius: 90px;
@@ -45,6 +49,10 @@
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
+  }
+
+.cat-right-ear:hover {
+    transform: rotate(50deg);
   }
   
   .cat-left-inner-ear {
@@ -59,7 +67,7 @@
     border-right: 20px solid transparent;
     border-bottom: 40px solid #3b3b4f;
   }
-  
+
   .cat-right-inner-ear {
     position: absolute;
     top: 22px;
@@ -83,6 +91,10 @@
     height: 40px;
     background-color: #000;
   }
+
+  .cat-left-eye:hover {
+    background-color: #ffffff;
+  }
   
   .cat-right-eye {
     position: absolute;
@@ -93,6 +105,10 @@
     width: 30px;
     height: 40px;
     background-color: #000;
+  }
+
+  .cat-right-eye:hover {
+    background-color: #ffffff;
   }
   
   .cat-left-inner-eye {
@@ -105,7 +121,7 @@
     background-color: #fff;
     border-radius: 60%;
   }
-  
+
   .cat-right-inner-eye {
     position: absolute;
     top: 8px;
