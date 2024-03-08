@@ -5,7 +5,8 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
-  
+  /* ::before and ::after are pseudo-selectors creating a pseudo-element of the element. box-sizing here is inheriting the value from html selector */
+
   #piano {
     background-color: #00471b;
     width: 992px;
@@ -13,6 +14,7 @@ html {
     margin: 80px auto;
     padding: 90px 20px 0 20px;
     position: relative;
+    /* this allows the .keys class to have a point of reference */
     border-radius: 10px;
   }
   
@@ -22,21 +24,29 @@ html {
     height: 180px;
     padding-left: 2px;
     overflow: hidden;
+    /* overflow property here is in relation to the @media query. this allows the overflowing elements to be hidden once the @media query is reached */
   }
   
   .key {
     background-color: #ffffff;
     position: relative;
+     /* this allows the .keys.black--key class to have a point of reference */
     width: 41px;
     height: 175px;
     margin: 2px;
     float: left;
     border-radius: 0 0 3px 3px;
   }
+
+  .key:active {
+    background-color: hsla(0, 0%, 100%, 0.671);
+  }
   
   .key.black--key::after {
+    /* creates a pseudo-element after the indicated selector */
     background-color: #1d1e22;
     content: "";
+    /* related to the ::after pseudo-class. no value for class allows the element to be hidden but still a part of the html */
     position: absolute;
     left: -18px;
     width: 32px;
@@ -45,12 +55,14 @@ html {
   }
   
   .logo {
-    width: 200px;
+    width: 0;
     position: absolute;
-    top: 23px;
+    top: 13px;
+    left: 13px;
   }
   
   @media (max-width: 768px) {
+    /* cuts down the piano once the max-width is reached*/
     #piano {
       width: 358px;
     }
@@ -65,6 +77,7 @@ html {
   }
   
   @media (max-width: 1199px) and (min-width: 769px) {
+    /* cuts or extends the piano based on the max & min width inputs */
     #piano{
       width: 675px;
     }
