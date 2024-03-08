@@ -55,14 +55,13 @@ html {
   }
   
   .logo {
-    width: 0;
+    width: 5rem;
     position: absolute;
-    top: 13px;
-    left: 13px;
+    top: 23px;
   }
   
   @media (max-width: 768px) {
-    /* cuts down the piano once the max-width is reached*/
+    /* cuts down the piano once the max-width is reached */
     #piano {
       width: 358px;
     }
@@ -72,7 +71,7 @@ html {
     }
   
     .logo {
-      width: 150px;
+      width: 4rem;
     }
   }
   
