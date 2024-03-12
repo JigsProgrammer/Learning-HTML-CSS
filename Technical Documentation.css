@@ -44,12 +44,6 @@
     border-bottom: 0.2rem solid black;
   }
   
-  @media (max-width: 768px) {
-    #.nav-link {
-  
-    }
-  }
-  
    .main-section {
     background-color:red;
   }
