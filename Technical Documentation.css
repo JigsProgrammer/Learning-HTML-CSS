@@ -1,0 +1,55 @@
+:root {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after, {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: auto;
+    display: block;
+  }
+  
+  #navbar {
+    display: grid;
+    text-align: center;
+    text-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 30rem auto;
+    min-height: 45rem;
+    position: fixed;
+  }
+  
+  @media (max-width: 768px){
+    #navbar {
+      justify-content: left;
+      position: relative;
+      min-height: 20rem;
+      overflow: auto;
+      text-align: left;
+    }
+  }
+  
+  .nav-link {
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+  }
+  
+  @media (max-width: 768px) {
+    #.nav-link {
+  
+    }
+  }
+  
+   .main-section {
+    background-color:red;
+  }
