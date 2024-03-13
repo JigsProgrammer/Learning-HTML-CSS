@@ -85,12 +85,15 @@ body { /*This is a class selector*/
   
   a:visited {
     color: black;
+    /* :visited is when the link is clicked on and went to the site */
   }
   
   a:hover {
     color: brown;
+    /* :hover is for when the mouse is hovering the link */
   }
   
   a:active {
     color: brown;
+    /* :active is when the link is clicked on */
   }
