@@ -12,7 +12,7 @@ h1 {
     width: 200px;
     height: 25px;
     margin: 10px auto;
-    /*Auto here is auto for all margins, right?*/
+    /*Auto here is auto for all margins, right? Auto-centering on all sides*/
   }
   
   .cap {
