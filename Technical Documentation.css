@@ -1,49 +1,101 @@
 :root {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
   
-  * {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
   
-  img {
-    max-width: auto;
-    display: block;
-  }
+img {
+  max-width: auto;
+  display: block;
+}
   
+#navbar {
+  display: grid;
+  text-align: center;
+  text-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 30rem auto;
+  min-height: 35rem;
+  position: fixed;
+} 
+  
+@media (max-width: 768px){
   #navbar {
-    display: grid;
-    text-align: center;
-    text-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 30rem auto;
-    min-height: 45rem;
-    position: fixed;
+    justify-content: left;
+    position: relative;
+    min-height: 20rem;
+    overflow: auto;
+    text-align: left;
   }
+}
   
-  @media (max-width: 768px){
-    #navbar {
-      justify-content: left;
-      position: relative;
-      min-height: 20rem;
-      overflow: auto;
-      text-align: left;
-    }
-  }
+.nav-link {
+  border-top: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+}
   
-  .nav-link {
-    border-top: 0.2rem solid black;
-    border-bottom: 0.2rem solid black;
+.main-section {
+  background-color:rgb(223, 83, 83);
+}
+
+header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+section {
+  margin: 2em;
+  padding: 2em;
+}
+
+section > header {
+  /* margin-left: 1em */
+}
+
+section > p,
+  section > ul {
+  padding-inline: 2em;
+  margin-block: 0.5em;
   }
+
+section > ul > li {
+  padding-left: 2em;
+  list-style: square;
+  vertical-align: middle;
+}
+
+section > code {
+  background-color: rgb(215, 101, 101);
+  width: 100%;
+}
+
+@media max-width(768px) {
   
-   .main-section {
-    background-color:red;
+  section > p,
+  section > ul {
+    padding-inline: 2em;
+    margin-block: 0.5em;
   }
+
+  section > ul > li {
+    padding-left: 2em;
+    list-style: square;
+    vertical-align: middle;
+  }
+
+  section > code {
+    background-color: rgb(215, 101, 101);
+    width: 100%;
+  }
+}
+
