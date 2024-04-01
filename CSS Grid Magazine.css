@@ -134,7 +134,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
-  /*  */
+  /* self-explanatory property */
   margin-bottom: 3rem;
 }
 
@@ -156,7 +156,9 @@ hr {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3, min-content);
   gap: 2rem;
+  /* gap is for both row and column. 2 values: 1st is row, 2nd is column */
   place-items: center;
+  /* this property is for both align-items and justify-items. 2 values: 1st is align-items, 2nd is justify-items */
 }
 
 .image-1, .image-3 {
