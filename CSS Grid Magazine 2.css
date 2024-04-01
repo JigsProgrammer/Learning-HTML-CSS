@@ -41,7 +41,7 @@ main {
 img {
   width: 100%;
   object-fit: cover;
-  /* fits the element into its container */
+   /* fits the element into its container */
 }
 
 hr {
@@ -68,7 +68,7 @@ hr {
 
 .hero {
   grid-column: 1 / -1;
-  /* -1 is the last column */
+   /* -1 is the last column */
   position: relative;
 }
 
@@ -108,7 +108,7 @@ hr {
 }
 
 .first-paragraph::first-letter {
-  /* ::first-letter pseudo-selector specifies the first letter of the element */
+     /* ::first-letter pseudo-selector specifies the first letter of the element */
   font-size: 6rem;
   color: orangered;
   float: left;
@@ -126,15 +126,16 @@ hr {
 .quote::before {
   content: '" ';
 }
+
 .quote::after {
-  content: ' "' ;
+  content: ' "';
 }
 
 .text-with-images {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
-  /* self-explanatory property */
+   /* self-explanatory property */
   margin-bottom: 3rem;
 }
 
@@ -156,9 +157,9 @@ hr {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3, min-content);
   gap: 2rem;
-  /* gap is for both row and column. 2 values: 1st is row, 2nd is column */
+   /* gap is for both row and column. 2 values: 1st is row, 2nd is column */
   place-items: center;
-  /* this property is for both align-items and justify-items. 2 values: 1st is align-items, 2nd is justify-items */
+   /* this property is for both align-items and justify-items. 2 values: 1st is align-items, 2nd is justify-items */
 }
 
 .image-1, .image-3 {
