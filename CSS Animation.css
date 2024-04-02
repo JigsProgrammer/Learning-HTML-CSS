@@ -8,9 +8,13 @@
     max-width: 500px;
     max-height: 500px;
     animation-name: wheel;
+    /* links this class selector to the appropriate @keyframes wheel {} */
     animation-duration: 10s;
+    /* duration of the animation in one cycle */
     animation-iteration-count: infinite;
+    /* the number of times the animation will take place; takes in a number and infinite */
     animation-timing-function: linear;
+    /* this property with its value makes the animation smooth */
   }
   
   .line {
@@ -21,6 +25,7 @@
     top: 50%;
     left: 50%;
     transform-origin: 0% 0%;
+    /* origin point of the element that which is respected by the transform. Hence, the nth children below with transform property */
   }
   
   .line:nth-of-type(2) {
@@ -46,7 +51,9 @@
     position: absolute;
     border: 2px solid;
     transform-origin: 50% 0%;
+    /* 50% from left, 0% from top */
     animation: cabins 10s ease-in-out infinite;
+    /* animation property is the shortcut for -name, -duration, -timing-count, and -iteration-count */
   }
   
   .cabin:nth-of-type(1) {
@@ -89,12 +96,14 @@
     }
     25% {
       background-color: yellow;
+      /* this allows for a smooth change in color */
     }
     50% {
       background-color: purple;
     }
     75% {
       background-color: yellow;
+      /* smooth change to red */
     }
     100% {
       transform: rotate(-360deg);
